@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    
+    !self.scan(/.\b/).empty?
   end
 
   def question?
