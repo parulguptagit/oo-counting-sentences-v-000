@@ -7,7 +7,7 @@ class String
   end
 
   def question?
-
+    self.scan(/[?]\z/).empty? ? FALSE : TRUE
   end
 
   def exclamation?
