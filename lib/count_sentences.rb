@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-     if self.scan(/.\b/).empty?
+     if self.scan(/[?!.]\z/).empty?
        return FALSE
      else
        return TRUE
