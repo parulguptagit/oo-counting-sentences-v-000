@@ -11,7 +11,7 @@ class String
   end
 
   def exclamation?
-
+    self.scan(/[!]\z/).empty? ? FALSE : TRUE
   end
 
   def count_sentences
